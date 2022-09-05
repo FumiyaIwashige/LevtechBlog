@@ -6,6 +6,9 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
+    @extends('layouts.app')
+    
+    @section('content')
     <body>
         <h1>Blog Name</h1>
         <p class="create">[<a href="/posts/create">create</a>]</p>
@@ -22,4 +25,5 @@
             {{ $posts->links() }}
         </div>
     </body>
+    @endsection
 </html>

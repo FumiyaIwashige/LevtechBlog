@@ -6,6 +6,9 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
+    @extends('layouts.app')
+    
+    @section('content')  
     <body>
         <h1>Blog Name</h1>
         <form action="/posts" method="POST">
@@ -32,4 +35,5 @@
         </form>
         <div class='back'>[<a href='/'>back</a>]</div>
     </body>
+    @endsection
 </html>

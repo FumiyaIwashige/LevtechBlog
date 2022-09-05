@@ -6,6 +6,9 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
+    @extends('layouts.app')
+    
+    @section('content')
     <body>
         <h1 class="title">edit</h1>
         <form action="/posts/{{ $post->id }}" method='POST'>
@@ -23,4 +26,5 @@
         </form>
         <div class="back">[<a href="/posts/{{ $post->id }}">back</a>]</div>
     </body>
+    @endsection
 </html>
