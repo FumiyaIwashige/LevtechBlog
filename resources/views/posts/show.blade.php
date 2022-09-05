@@ -6,6 +6,9 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
+    @extends('layouts.app')
+    
+    @section('content')
     <body>
         <h1>Blog Name</h1>
         <p class="edit">[<a href="/posts/{{ $post->id }}/edit">edit</a>]</p>
@@ -31,5 +34,6 @@
             }
         </script>
     </body>
+    @endsection
 </html>
 

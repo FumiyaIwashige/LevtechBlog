@@ -7,6 +7,10 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
     <body>
+    @extends('layouts.app')
+    
+    @section('content')
+        <p>{{ Auth::user()->name }}</p>
         <h1>Blog Name</h1>
         <p class="create">[<a href="/posts/create">create</a>]</p>
         <div class='posts'>
@@ -22,4 +26,5 @@
             {{ $posts->links() }}
         </div>
     </body>
+    @endsection
 </html>
